@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="es" xmlns="http://www.w3.org/1999/html">
+<head>
+    <meta charset="UTF-8">
+    <title>TresEnRalla</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js"></script>
+    <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.7.2/jquery.min.js"></script>
+    <script src="ScrollDown.js"></script>
+</head>
+<body>
+<section class="sec-1">
+    <div class="start">
+        <div class="text">
+            <h1>TRES EN RAYA</h1>
+            <p>Esa página es para un trabajo de clase de lenuaje de marcas.
+                Para empezar a jugar pulsa el botón de START.
+                Hecha por Alberto Vicente Iglesias en enero de 2021. He usado flexbox y grid para alinear todo
+                y que sea mas responsive, ademas de detalles como el cursor al ponerte encima juego y que las pantallas
+                siempre ocupe el completo del alto del dispositivo :) </br></br>
+                Probarlo que es gratis!</p>
+        </div>
+        <div class="button">
+            <a href="#game"><div class="b-start"><p>START</p></div></a>
+        </div>
+    </div>
+</section>
+<section class="sec-2">
+    <div id="winX" class="win">
+        <div class="c-win">
+            <h1>El ganador es el jugador X!!!</h1>
+            <div class="c-win-b">
+                <a class="hover"><div class="b-close"  onclick="closet('#winX')"><p>CERRAR</p></div></a>
+                <a href="javascript:location.reload()"><div class="b-win"><p>REPLAY</p></div></a>
+            </div>
+        </div>
+    </div>
+    <div id="winO" class="win">
+        <div class="c-win">
+            <h1>El ganador es el jugador O!!!</h1>
+            <div class="c-win-b">
+                <a class="hover"><div onclick="closet('#winO')" class="b-close" ><p>CLOSE</p></div></a>
+                <a href="javascript:location.reload()"><div class="b-win"><p>REPLAY</p></div></a>
+            </div>
+        </div>
+    </div>
+    <div id="tablas" class="win">
+        <div class="c-win">
+            <h1>Empatee!!!</h1>
+            <div class="c-win-b">
+                <a class="hover"><div onclick="closet('#winO')" class="b-close" ><p>CLOSE</p></div></a>
+                <a href="javascript:location.reload()"><div class="b-win"><p>REPLAY</p></div></a>
+            </div>
+        </div>
+    </div>
+    <div id="game">
+        <div id="uno" onclick="play('#uno')"></div>
+        <div id="dos" onclick="play('#dos')"></div>
+        <div id="tres" onclick="play('#tres')"></div>
+        <div id="cuatro" onclick="play('#cuatro')"></div>
+        <div id="cinco" onclick="play('#cinco')"></div>
+        <div id="seis" onclick="play('#seis')"></div>
+        <div id="siete" onclick="play('#siete')"></div>
+        <div id="ocho" onclick="play('#ocho')"></div>
+        <div id="nueve" onclick="play('#nueve')"></div>
+    </div>
+    <div class="actions">
+        <a href="javascript:location.reload()"><div class="b-restart">RESTART</div></a>
+    </div>
+</section>
+
+</body>
+</html>
